@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+    <Script>
+    </Script><button onclick="lancerQuiz()">Démarrer le Quiz</button>
+    </Script>
+</body>
+</html>
