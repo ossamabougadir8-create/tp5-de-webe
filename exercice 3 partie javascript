@@ -1,0 +1,20 @@
+         function lancerQuiz() {
+            const QUESTIONS = [
+                ["Quelle est la capitale de la France?", "Paris"],
+                ["Combien font 2 + 2 ?", "4"],
+                ["Quel est le langage de programmation de ce TP ?", "JavaScript"]
+            ];
+            let scoreCorrect = 0;
+            for (let i = 0; i < QUESTIONS.length; i++) {
+                let questionCourante = QUESTIONS[i][0];
+                let reponseCorrecte = QUESTIONS[i][1];
+                let reponseUtilisateur = prompt(questionCourante);
+                if (reponseUtilisateur === reponseCorrecte) {
+                    alert("Réponse juste !");
+                    scoreCorrect++;
+                } else {
+                    alert("Réponse fausse. La bonne réponse était : " + reponseCorrecte);
+                }
+            }
+            alert("Le quiz est terminé ! Votre score final est : " + scoreCorrect + "/" + QUESTIONS.length);
+        }
