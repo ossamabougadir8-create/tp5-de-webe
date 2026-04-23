@@ -1,0 +1,22 @@
+function lancerQuiz() {
+    let QUESTIONS = [
+        ["Quelle est la capitale de la France ?", "Paris"],
+        ["Combien font 5 + 7 ?", "12"],
+        ["Quelle est la couleur du ciel par beau temps ?", "Bleu"],
+        ["Quel est le langage utilisé pour dynamiser le Web ?", "JavaScript"],
+        ["Combien de continents y a-t-il sur Terre ?", "7"]
+    ];
+    let score = 0;
+    for (let i = 0; i < QUESTIONS.length; i++) {
+        let questionTexte = QUESTIONS[i][0];
+        let bonneReponse = QUESTIONS[i][1];
+        let reponseUtilisateur = prompt(questionTexte);
+        if (reponseUtilisateur !== null && reponseUtilisateur.toLowerCase() === bonneReponse.toLowerCase()) {
+            alert("Réponse juste !");
+            score++;
+        } else {
+            alert("Réponse fausse. La bonne réponse était : " + bonneReponse);
+        }
+    }
+    alert("Le quiz est terminé ! \nVous avez répondu correctement à " + score + " questions sur " + QUESTIONS.length + ".");
+}
