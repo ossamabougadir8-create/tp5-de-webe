@@ -1,0 +1,15 @@
+let nombreAleatoire = Math.floor(Math.random() * 10) + 1;
+let tentative;
+let score = 0;
+while (true) {
+    tentative = parseInt(prompt("Devinez le nombre entre 1 et 10 :"));
+    score++; [span_4](start_span)
+    if (tentative === nombreAleatoire) {
+        alert("Bravo ! Vous avez trouvé en " + score + " tentative(s).");
+        break; [span_5](start_span)
+    } else if (tentative < nombreAleatoire) {
+        alert("Le nombre à deviner est plus grand.");
+    } else {
+        alert("Le nombre à deviner est plus petit.");
+    }
+}
